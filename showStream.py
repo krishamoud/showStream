@@ -4,6 +4,7 @@ from tweepy.streaming import StreamListener
 import json, time, sys
 import datetime
 import tweepy
+import unittest
 
 #API Keys and Access Tokens Provided by Twitter
 api_key = 'nMx5ZaxM0MDYO34MB03sqKB99'
@@ -134,7 +135,6 @@ class StdOutListener(StreamListener):
 
     def on_timeout(self, status):
         print 'Stream disconnected; continuing...'
-
 
 
 twitterStream = Stream(auth, StdOutListener())

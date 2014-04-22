@@ -1,21 +1,3 @@
 Tweet Data
 ==========
 
-2014-04-22 07:27:39::I had a very scary nightmare about Mama Pope :( #scandal @shondarhimes
-2014-04-22 07:27:44::@Olenna_ is the most badass grandma in the history of ever. #GoT #growingstrong #WinterIsComing
-2014-04-22 07:27:48::Lots of conversation about #houseofcards happening on #tvtag http://t.co/A0DnL8h3mV
-2014-04-22 07:27:53::Ciaone dal mio nuovo sfondo #GoT #ValarMorghulis
-
-
-It took 16.0880901814 seconds to gather 4 tweets about these shows.
-
-2 out of 4 tweets were about Game of Thrones.
-1 out of 4 tweets were about Scandal.
-1 out of 4 tweets were about House of Cards.
-
-Game of Thrones is the most popular show on twitter as of 2014-04-22 07:27:53
-
-The average tweet length of these shows is 74 characters.
-The average tweet length about Game of Thrones is 71 characters.
-The average tweet length about Scandal is 70 characters.
-The average tweet length about House of Cards is 83 characters.
