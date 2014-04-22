@@ -1,13 +1,32 @@
 Tweet Data
 ==========
 
-2014-04-22 06:43:37::RT @ChristianHeiens: "The viewers send their regards". #GoT #PurpleWedding
-2014-04-22 06:43:37::My man #KevinSpacey stackin up in #HouseofCards #Netflix #Original as Frank Underwood #FU. He drops… http://t.co/tL9mZb7J3e
+2014-04-22 07:15:07::baelish?!?!?!?!?!?!?! #GoT
+2014-04-22 07:15:07::RT @guilty_9115: 【定期】
+#好きなアーティスト10組載せて1つでも被ったらRT
+#RTした人全員フォローする 
+#相互フォロー 
+
+#SPYAIR
+#SCANDAL
+#supercell
+#セカオワ
+#ONE OK ROCK 
+#miwa
+#西野カナ
+#AAA…
+2014-04-22 07:15:07::RT @allisonkilkenny: George R.R. Martin apologized for the #GoT rape scene (even though it's not his fault) http://t.co/xmGdoSGjzu
 
 
-It took 3.73418593407 seconds to gather 2 tweets about these shows.
+It took 2.64160203934 seconds to gather 3 tweets about these shows.
 
-1 out of 2 tweets were about Game of Thrones.
-0 out of 2 tweets were about Scandal.
-1 out of 2 tweets were about House of Cards.
-House of Cards is the most popular show on twitter as of 2014-04-22 06:43:37
+2 out of 3 tweets were about Game of Thrones.
+1 out of 3 tweets were about Scandal.
+0 out of 3 tweets were about House of Cards.
+
+Game of Thrones is the most popular show on twitter as of 2014-04-22 07:15:07
+
+The average tweet length of these shows is 132 characters.
+The average tweet length about Game of Thrones is 78 characters.
+The average tweet length about Scandal is 240 characters.
+There were no tweets about House of Cards.

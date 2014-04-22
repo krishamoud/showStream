@@ -59,61 +59,54 @@ class StdOutListener(StreamListener):
                 print str(self.scandal_tweets) + " tweet(s) were about Scandal."
                 print str(self.HoC_tweets) + " tweet(s) were about House of Cards."
                 total_time = time.time() - self.start_time
-                print "It took " + str(total_time) + " seconds to finish streaming."
+                print "It took " + str(total_time) + " seconds to finish streaming.\n\n"
                 self.text_file.write("\n\nIt took " + str(total_time) + " seconds to gather " + str(self.count) + " tweets about these shows.\n\n")
                 self.text_file.write(str(self.GoT_tweets) + " out of " + str(self.count) + " tweets were about Game of Thrones.\n")
                 self.text_file.write(str(self.scandal_tweets) + " out of " + str(self.count) + " tweets were about Scandal.\n")
-                self.text_file.write(str(self.HoC_tweets) + " out of " + str(self.count) + " tweets were about House of Cards.\n")
+                self.text_file.write(str(self.HoC_tweets) + " out of " + str(self.count) + " tweets were about House of Cards.\n\n")
 
                 if self.GoT_tweets > self.scandal_tweets and self.GoT_tweets > self.HoC_tweets:
-                    self.text_file.write("Game of Thrones is the most popular show on twitter as of " + datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S'))
+                    self.text_file.write("Game of Thrones is the most popular show on twitter as of " + datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S\n\n'))
                     print "Game of Thrones was the most popular show out of those " + str(self.count) + " tweet(s)"
                 elif self.scandal_tweets > self.GoT_tweets and self.scandal_tweets > self.HoC_tweets:
-                    self.text_file.write("Scandal is the most popular show on twitter as of " + datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S'))
+                    self.text_file.write("Scandal is the most popular show on twitter as of " + datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S\n\n'))
                     print "Scandalwas the most popular show out of those " + str(self.count) + " tweet(s)"
                 else:
-                    self.text_file.write("House of Cards is the most popular show on twitter as of " + datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S'))
+                    self.text_file.write("House of Cards is the most popular show on twitter as of " + datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S\n\n'))
                     print "House of Cards was the most popular show out of those " + str(self.count) + " tweet(s)"
 
                 length_of_all_tweets = map(len, self.tweet_list)
-                print length_of_all_tweets
-            
+                print "The average tweet length about these shows is " + str(sum(length_of_all_tweets) / len(length_of_all_tweets)) + " characters." 
+                self.text_file.write("The average tweet length of these shows is " + str(sum(length_of_all_tweets) / len(length_of_all_tweets)) + " characters.\n")
 
+                length_of_got = map(len, self.GoT_list)
+                if len(length_of_got):
+                    print "The average tweet length about Game of Thrones is " + str(sum(length_of_got) / len(length_of_got)) + " characters."
+                    self.text_file.write("The average tweet length about Game of Thrones is " + str(sum(length_of_got) / len(length_of_got)) + " characters.\n")
+                else:
+                    print "There were no tweets about Game of Thrones."
+                    self.text_file.write("There were no tweets about Game of Thrones.\n")
+    
+                length_of_scandal = map(len, self.scandal_list)
+                if len(length_of_scandal):
+                    print "The average tweet length about Scandal is " + str(sum(length_of_scandal) / len(length_of_scandal)) + " characters."
+                    self.text_file.write( "The average tweet length about Scandal is " + str(sum(length_of_scandal) / len(length_of_scandal)) + " characters.\n")
+                else:
+                    print "There were no tweets about Scandal"
+                    self.text_file.write("There were no tweets about Scandal.\n")
+                
+                length_of_hoc = map(len, self.HoC_list)
+                if len(length_of_hoc):
+                    print "The average tweet length about House of Cards is " + str(sum(length_of_hoc) / len(length_of_hoc)) + " characters."
+                    self.text_file.write("The average tweet length about House of Cards is " + str(sum(length_of_hoc) / len(length_of_hoc)) + " characters.\n")
+                else:
+                    print "There were no tweets about House of Cards"
+                    self.text_file.write("There were no tweets about House of Cards.\n")
 
                 self.text_file.close()
                 return False
             else:
                 return True
-        """else:
-            print "Finished"
-            print str(self.GoT_tweets) + " tweet(s) were about Game of Thrones."
-            print str(self.scandal_tweets) + " tweet(s) were about Scandal."
-            print str(self.HoC_tweets) + " tweet(s) were about House of Cards."
-            total_time = time.time() - self.start_time
-            print "It took " + str(total_time) + " seconds to finish streaming."
-            self.text_file.write("\n\nIt took " + str(total_time) + " seconds to gather " + str(self.count) + " tweets about these shows.\n\n")
-            self.text_file.write(str(self.GoT_tweets) + " out of " + str(self.count) + " tweets were about Game of Thrones.\n")
-            self.text_file.write(str(self.scandal_tweets) + " out of " + str(self.count) + " tweets were about Scandal.\n")
-            self.text_file.write(str(self.HoC_tweets) + " out of " + str(self.count) + " tweets were about House of Cards.\n")
-
-            if self.GoT_tweets > self.scandal_tweets and self.GoT_tweets > self.HoC_tweets:
-                self.text_file.write("Game of Thrones is the most popular show on twitter as of " + datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S'))
-                print "Game of Thrones was the most popular show out of those " + str(self.count) + " tweet(s)"
-            elif self.scandal_tweets > self.GoT_tweets and self.scandal_tweets > self.HoC_tweets:
-                self.text_file.write("Scandal is the most popular show on twitter as of " + datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S'))
-                print "Scandalwas the most popular show out of those " + str(self.count) + " tweet(s)"
-            else:
-                self.text_file.write("House of Cards is the most popular show on twitter as of " + datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S'))
-                print "House of Cards was the most popular show out of those " + str(self.count) + " tweet(s)"
-
-            length_of_all_tweets = map(len, self.tweet_list)
-            print length_of_all_tweets
-            
-
-
-            self.text_file.close()
-
-            return False""" 
 
     def on_error(self, status):
         print 'Error on status', status
