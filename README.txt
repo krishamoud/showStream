@@ -1,3 +1,7 @@
+This program requires the 'tweepy' module. 
+
+To get it run "pip install tweepy"
+
 This program asks the user how many tweets he or she would like to stream.
 After inputing a number N the program will stream until it reaches N tweets.
 From there the program does some math to see what the most popular show was based on those N tweets.
