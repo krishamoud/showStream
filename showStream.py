@@ -91,7 +91,8 @@ class StdOutListener(StreamListener):
                 length_of_all_tweets = map(len, self.tweet_list)
                 print "The average tweet length about these shows is " + str(sum(length_of_all_tweets) / len(length_of_all_tweets)) + " characters." 
                 self.text_file.write("The average tweet length of these shows is " + str(sum(length_of_all_tweets) / len(length_of_all_tweets)) + " characters.\n")
-
+                
+                #checks to make sure the program doesn't try to divide by 0
                 length_of_got = map(len, self.GoT_list)
                 if len(length_of_got):
                     print "The average tweet length about Game of Thrones is " + str(sum(length_of_got) / len(length_of_got)) + " characters."
@@ -115,13 +116,16 @@ class StdOutListener(StreamListener):
                 else:
                     print "There were no tweets about House of Cards"
                     self.text_file.write("There were no tweets about House of Cards.\n")
-
+                
+                #close the text file
                 self.text_file.close()
+                #the program ends right about here
                 print "You can find a text file with all this information in this directory with the name 'twitter_data.txt'"
                 return False
             else:
                 return True
 
+    #these are to catch any extraneous circumstances such as errors or hitting the API rate limit
     def on_error(self, status):
         print 'Error on status', status
 

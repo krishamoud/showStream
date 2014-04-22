@@ -1,32 +1,21 @@
 Tweet Data
 ==========
 
-2014-04-22 07:15:07::baelish?!?!?!?!?!?!?! #GoT
-2014-04-22 07:15:07::RT @guilty_9115: 【定期】
-#好きなアーティスト10組載せて1つでも被ったらRT
-#RTした人全員フォローする 
-#相互フォロー 
-
-#SPYAIR
-#SCANDAL
-#supercell
-#セカオワ
-#ONE OK ROCK 
-#miwa
-#西野カナ
-#AAA…
-2014-04-22 07:15:07::RT @allisonkilkenny: George R.R. Martin apologized for the #GoT rape scene (even though it's not his fault) http://t.co/xmGdoSGjzu
+2014-04-22 07:27:39::I had a very scary nightmare about Mama Pope :( #scandal @shondarhimes
+2014-04-22 07:27:44::@Olenna_ is the most badass grandma in the history of ever. #GoT #growingstrong #WinterIsComing
+2014-04-22 07:27:48::Lots of conversation about #houseofcards happening on #tvtag http://t.co/A0DnL8h3mV
+2014-04-22 07:27:53::Ciaone dal mio nuovo sfondo #GoT #ValarMorghulis
 
 
-It took 2.64160203934 seconds to gather 3 tweets about these shows.
+It took 16.0880901814 seconds to gather 4 tweets about these shows.
 
-2 out of 3 tweets were about Game of Thrones.
-1 out of 3 tweets were about Scandal.
-0 out of 3 tweets were about House of Cards.
+2 out of 4 tweets were about Game of Thrones.
+1 out of 4 tweets were about Scandal.
+1 out of 4 tweets were about House of Cards.
 
-Game of Thrones is the most popular show on twitter as of 2014-04-22 07:15:07
+Game of Thrones is the most popular show on twitter as of 2014-04-22 07:27:53
 
-The average tweet length of these shows is 132 characters.
-The average tweet length about Game of Thrones is 78 characters.
-The average tweet length about Scandal is 240 characters.
-There were no tweets about House of Cards.
+The average tweet length of these shows is 74 characters.
+The average tweet length about Game of Thrones is 71 characters.
+The average tweet length about Scandal is 70 characters.
+The average tweet length about House of Cards is 83 characters.
